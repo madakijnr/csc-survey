@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Survey Form</title>
+         
+        <!-- source code file link -->
+        <a href="https://www.computersciencesurvey.com/">computersciencesurvey</a>
+        <!-- css file link -->
+        <link rel="Stylesheet" href="style.css">
+        </head>
+        <body>
+            <div class="container">
+                <header class="header">
+                    <h1 id="title">
+                        Survey For Computer Science Students
+                    </h1>
+                    <p id="description">
+                        Thank you for taking out time to take this survey
+                    </p>
+                </header>
+                <form action="" id="survey-form">
+                  <!--Text section -->
+                  <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name"  id="name" class="formControl" Placeholder="enter your name" required>
+         </div>
+         <!-- end of text section -->
+  
+         <!-- Type email section --> 
+           <div class="form-group">
+                    <label for="name">Email:</label>
+                    <input type="email" name="email"  id="email" class="formControl" Placeholder="enter your email" required>
+         </div>
+         <!-- end of type email section -->
+  
+         <!-- Type number section -->
+          <div class="form-group">
+                    <label for="phone">Phone No:</label>
+                    <input type="number" name="phone"  id="phone" class="formControl" Placeholder="enter your phone number" required>
+         </div>
+       <!-- end of number section -->
+  
+       <!-- Type address section -->
+        <div class="form-group">
+        <label for="address">Address<span class="clue">(optional):</span></label>
+                    <input type="text" name="address"  id="address" class="formControl" Placeholder="enter your address" required>
+         </div>
+         <!-- end of address section -->
+  
+         <!-- Select section -->
+         <div class="form-group">
+           <p id="quest">Which option best describes your current status ?</p>
+           <select name="status" id="dropdown" class="formControl" required><option value="" disabled selected>select current status</option><option value="student">Student</option>
+           <option value="employed">Employed</option>
+           <option value="self-employed">Self-Employed</option>
+           <option value="unemployed">Uemployed</option>
+           <option value="other">Other</option>
+           
+             </select>
+           </div>
+           <!-- end of select section -->
+  
+           <!-- radio button selection -->
+           <div class="form-group">
+             <p id="quest">Why did you decided to study computer science ?</p>
+            <label for="">
+              <input type="radio"
+              name="source"
+              value="ambition"
+              class="inputRadio"
+              >Ambition</label>
+  
+               <label for="">
+              <input type="radio"
+              name="source"
+              value="love-for-computer-systems"
+              class="inputRadio"
+              >Love For Computer Systems</label>
+  
+               <label for="">
+              <input type="radio"
+              name="source"
+              value="programming"
+              class="inputRadio"
+              checked>Programming</label>
+               
+               <label for="">
+              <input type="radio"
+              name="source"
+              value="graphic-designs"
+              class="inputRadio"
+              >Graphic Designs</label>
+  
+              <label for="">
+              <input type="radio"
+              name="source"
+              value="other-resaons"
+              class="inputRadio"
+              >0ther Reasons</label>
+              </div>
+         <!-- end of radio button selection -->
+         
+         <!-- checkbox section -->
+         <div class="form-group">
+           <p id="quest">What professional field would you like to go into ?</p>
+           <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="back-end-dev">Back-end Developer</label>
+  
+             <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="front-end-dev">Front-end Developer</label>
+  
+              <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="app-dev">Android App Developer</label>
+  
+              <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="software-engineering">Software Engineering</label>
+             
+              <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="website-developer">Website Developer</label>
+             
+              <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="graphic-designer">Graphic Designer</label>
+  
+              <label for="">
+             <input type="checkbox"
+             name="prefer"
+             class="checkbox"
+             value="others">Others</label>
+             </div>
+            <!-- end of checkbox section -->
+  
+            <!-- textarea section -->
+            <div class="form-group">
+              <p id="quest">Give us your feedback</p>
+              <textarea name="feedback"
+              id="feedback" cols="30"
+              rows="5" class="textarea"
+              placeholder="Enter your feedback here..."></textArea>
+              </div>
+            <!-- end of textarea section -->
+  
+            <!-- submit button -->
+            <div class="form-group">
+              <button type="submit"
+              id="submit"
+              class="btn">Submit</button>
+              </div>
+              
+               </h1>
+              <p id="description">
+                Author: Madaki Jonathan(Babzzy Lyon)
+                </p>
+              
+       </form>
+  
+      </body>
+      </html>
